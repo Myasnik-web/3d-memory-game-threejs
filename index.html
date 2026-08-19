@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neural Core: Omega 3D</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <div class="scanline"></div>
+  <div id="canvas-container"></div>
+
+  <div class="ui-container">
+    <div class="top-bar">
+      <div class="brand">
+        <h1>NEURAL CORE</h1>
+        <div class="version">OMEGA v3.0 // HIGH-TECH SIMULATOR</div>
+      </div>
+      <div class="mode-selector">
+        <button class="mode-btn active" data-mode="normal">NORMAL</button>
+        <button class="mode-btn" data-mode="reverse">REVERSE</button>
+        <button class="mode-btn" data-mode="hyper">HYPER</button>
+      </div>
+    </div>
+
+    <div class="hud-center">
+      <div id="status-tag" class="status-tag">SYSTEM STANDBY</div>
+    </div>
+
+    <div class="bottom-bar">
+      <div class="stats-group">
+        <div class="stat">
+          <span class="label">STAGE</span>
+          <span id="level-val" class="val">00</span>
+        </div>
+        <div class="stat">
+          <span class="label">COMBO</span>
+          <span id="combo-val" class="val highlight">x1</span>
+        </div>
+        <div class="stat">
+          <span class="label">TOP SCORE</span>
+          <span id="score-val" class="val">0000</span>
+        </div>
+      </div>
+
+      <button id="main-btn" class="main-btn">INITIALIZE CORE</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
